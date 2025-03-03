@@ -84,11 +84,14 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `eventtypes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `eventtypes` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `typename` varchar(35) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE eventtypes (
+  id INT NOT NULL AUTO_INCREMENT,
+  event_name VARCHAR(35) NOT NULL,
+  description TEXT,
+  PRIMARY KEY (id),
+  INDEX idx_event_name (event_name)
+);
+ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
