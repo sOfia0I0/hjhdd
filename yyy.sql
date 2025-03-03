@@ -97,7 +97,7 @@ CREATE TABLE `eventtypes` (
 
 LOCK TABLES `eventtypes` WRITE;
 /*!40000 ALTER TABLE `eventtypes` DISABLE KEYS */;
-INSERT INTO `eventtypes` VALUES (1,'Концерт'),(2,'Спектакль'),(3,'Выставка'),(4,'Семинар'),(5,'Конференция'),(6,'Мастер-класс'),(8,'Вебинар');
+INSERT INTO `eventtypes` VALUES (1,'Концерт'),(2,'Спектакль'),(3,'Выставка'),(4,'Семинар'),(5,'Конференция'),(6,'Мастер-класс'),(8,'Вебинар'),(9,'Стендап');
 /*!40000 ALTER TABLE `eventtypes` ENABLE KEYS */;
 UNLOCK TABLES;
 
